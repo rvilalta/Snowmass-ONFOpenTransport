@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenInterfaceModel_Profile="http:///schemas/OpenInterfaceModel_Profile/_5WBP4CZrEee8VYv13r5Sxg/6" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_EwCygFaYEeeYOvPfNXXwvA/23" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenInterfaceModel_Profile/_5WBP4CZrEee8VYv13r5Sxg/6 UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_5WB28CZrEee8VYv13r5Sxg http:///schemas/OpenModel_Profile/_EwCygFaYEeeYOvPfNXXwvA/23 UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_EwISEFaYEeeYOvPfNXXwvA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenInterfaceModel_Profile="http:///schemas/OpenInterfaceModel_Profile/_3NKYsD78EeiIisB6uOvKFA/8" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_S30WUD8HEeiIisB6uOvKFA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenInterfaceModel_Profile/_3NKYsD78EeiIisB6uOvKFA/8 UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_3NPRMD78EeiIisB6uOvKFA http:///schemas/OpenModel_Profile/_S30WUD8HEeiIisB6uOvKFA/26 UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_S32LgD8HEeiIisB6uOvKFA">
   <uml:Model xmi:id="_nbYiwDA4Eea4fKwSGMr6CA" name="TapiTopology">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_MQDu0BEKEeix4OZk6OGmSg" annotatedElement="_nbYiwDA4Eea4fKwSGMr6CA">
+      <body>&#xD;
+This module contains TAPI Topology Model definitions.&#xD;
+Source: TapiTopology.uml&#xD;
+Copyright (c) 2018 Open Networking Foundation (ONF). All rights reserved.&#xD;
+License: This module is distributed under the Apache License 2.0</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Package" xmi:id="_RPB0EC5xEea0_JngOlSKcA" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_STzYAO_tEeWLlrwIF3w0vA" name="NodeEPHasStatePac" memberEnd="_STzYA-_tEeWLlrwIF3w0vA _STzYBe_tEeWLlrwIF3w0vA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_STzYAe_tEeWLlrwIF3w0vA" source="org.eclipse.papyrus">
@@ -56,12 +63,6 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="__EdnwN71EeW-BtRsuJPbqg" name="_link" type="_37fFQOMCEeSdZOEXoN8VDQ" association="__ET2wN71EeW-BtRsuJPbqg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_0rPocNnXEeWIOYiRCk5bbQ" name="NodeEPIncludesLP" memberEnd="_0rYyYtnXEeWIOYiRCk5bbQ _0rYyZNnXEeWIOYiRCk5bbQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0rYyYNnXEeWIOYiRCk5bbQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0rYyYdnXEeWIOYiRCk5bbQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_0rYyZNnXEeWIOYiRCk5bbQ" name="_nodeEdgePoint" type="_i1UzkD-3EeWNAdBR30aJhw" association="_0rPocNnXEeWIOYiRCk5bbQ"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_tOFAkN7rEeW-BtRsuJPbqg" name="NodeHasCapacityPac" memberEnd="_tOFAk97rEeW-BtRsuJPbqg _tOFAld7rEeW-BtRsuJPbqg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tOFAkd7rEeW-BtRsuJPbqg" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tOFAkt7rEeW-BtRsuJPbqg" key="nature" value="UML_Nature"/>
@@ -99,15 +100,6 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_Iz6UoKf4EeW6jfwWQNiYcg" name="_node" type="_xImb0OK4EeSq5fATALSQkQ" association="_IzuHYKf4EeW6jfwWQNiYcg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N1sMcKf4EeW6jfwWQNiYcg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N1sMcaf4EeW6jfwWQNiYcg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_8VTUQD-_EeWNAdBR30aJhw" name="LinkHasAsociatedNodes" memberEnd="_8VW-oD-_EeWNAdBR30aJhw _8VYMwD-_EeWNAdBR30aJhw">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8VVJcD-_EeWNAdBR30aJhw" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8VVwgD-_EeWNAdBR30aJhw" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_8VYMwD-_EeWNAdBR30aJhw" name="_link" type="_37fFQOMCEeSdZOEXoN8VDQ" association="_8VTUQD-_EeWNAdBR30aJhw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GSZ2kD_AEeWNAdBR30aJhw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GScS0D_AEeWNAdBR30aJhw" value="*"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_tQQ4UGj_EeWZEqTYAF8eqA" name="LinkTerminatesOnNEP" memberEnd="_tQQ4U2j_EeWZEqTYAF8eqA _tQQ4VWj_EeWZEqTYAF8eqA">
@@ -302,6 +294,18 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_Wi58shl6EeeV4o0osG5stg" name="noderulegroup" type="_xDuuoBk7EeeV4o0osG5stg" association="_Wiz2EBl6EeeV4o0osG5stg"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UbP1gKg5EeeAVfY3jqnvAA" name="NEPHasTerminationPac" memberEnd="_UbQckqg5EeeAVfY3jqnvAA _UbRqsKg5EeeAVfY3jqnvAA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UbQckKg5EeeAVfY3jqnvAA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UbQckag5EeeAVfY3jqnvAA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_UbRqsKg5EeeAVfY3jqnvAA" name="nodeedgepoint" type="_i1UzkD-3EeWNAdBR30aJhw" association="_UbP1gKg5EeeAVfY3jqnvAA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_o-AWQBNVEeiKtYjI8wVF7A" name="NEPHasCapacityPac" memberEnd="_o-BkYRNVEeiKtYjI8wVF7A _o-CygBNVEeiKtYjI8wVF7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_o-A9UBNVEeiKtYjI8wVF7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_o-BkYBNVEeiKtYjI8wVF7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_o-CygBNVEeiKtYjI8wVF7A" name="nodeedgepoint" type="_i1UzkD-3EeWNAdBR30aJhw" association="_o-AWQBNVEeiKtYjI8wVF7A"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_SXc0sC5xEea0_JngOlSKcA" name="Diagrams"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_QOoHAC5xEea0_JngOlSKcA" name="Imports">
@@ -368,10 +372,6 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QK-uwGkAEeWZEqTYAF8eqA" value="2"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QK-uwWkAEeWZEqTYAF8eqA" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_8VW-oD-_EeWNAdBR30aJhw" name="_node" type="_xImb0OK4EeSq5fATALSQkQ" isReadOnly="true" association="_8VTUQD-_EeWNAdBR30aJhw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TiWCoD_AEeWNAdBR30aJhw" value="2"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TiZtAD_AEeWNAdBR30aJhw" value="*"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_IZggA98AEeW-BtRsuJPbqg" name="_state" isReadOnly="true" aggregation="composite" association="_IZggAN8AEeW-BtRsuJPbqg">
           <type xmi:type="uml:Class" href="TapiCommon.uml#_j2GU0N78EeW-BtRsuJPbqg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QpQLkH6tEeeh4KO3PMo8Rw" value="1"/>
@@ -425,7 +425,7 @@ Is not present in more complex cases.</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xImb0OK4EeSq5fATALSQkQ" name="Node" isLeaf="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_xImb0eK4EeSq5fATALSQkQ" annotatedElement="_xImb0OK4EeSq5fATALSQkQ">
-          <body>The ForwardingDomain (FD) object class models the “ForwardingDomain” topological component which is used to effect forwarding of transport characteristic information and offers the potential to enable forwarding. &#xD;
+          <body>The ForwardingDomain (FD) object class models the ForwardingDomain topological component which is used to effect forwarding of transport characteristic information and offers the potential to enable forwarding. &#xD;
 At the lowest level of recursion, an FD (within a network element (NE)) represents a switch matrix (i.e., a fabric). Note that an NE can encompass multiple switch matrices (FDs). </body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_W9J6MN8BEeW-BtRsuJPbqg">
@@ -477,7 +477,7 @@ At the lowest level of recursion, an FD (within a network element (NE)) represen
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ejyEgOKyEeSq5fATALSQkQ" name="Topology" isLeaf="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_ejyEgeKyEeSq5fATALSQkQ" annotatedElement="_ejyEgOKyEeSq5fATALSQkQ">
-          <body>The ForwardingDomain (FD) object class models the “ForwardingDomain” topological component which is used to effect forwarding of transport characteristic information and offers the potential to enable forwarding. &#xD;
+          <body>The ForwardingDomain (FD) object class models the ForwardingDomain topological component which is used to effect forwarding of transport characteristic information and offers the potential to enable forwarding. &#xD;
 At the lowest level of recursion, an FD (within a network element (NE)) represents a switch matrix (i.e., a fabric). Note that an NE can encompass multiple switch matrices (FDs). </body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_5ybxcO_gEeWLlrwIF3w0vA">
@@ -522,16 +522,19 @@ The structure of LTP supports all transport protocols including circuit and pack
         <generalization xmi:type="uml:Generalization" xmi:id="_3vF8gO_nEeWLlrwIF3w0vA">
           <general xmi:type="uml:Class" href="TapiCommon.uml#_tjWBYD3fEea-1_BGg-qcjQ"/>
         </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_0rYyYtnXEeWIOYiRCk5bbQ" name="_layerProtocol" isReadOnly="true" aggregation="composite" association="_0rPocNnXEeWIOYiRCk5bbQ">
-          <type xmi:type="uml:Class" href="TapiCommon.uml#_r01pEL6nEeWRz-VHgA3LJQ"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OlnfwNnYEeWIOYiRCk5bbQ" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OlnfwdnYEeWIOYiRCk5bbQ" value="*"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qpAjEKg3EeeAVfY3jqnvAA" name="layerProtocolName" isReadOnly="true">
+          <type xmi:type="uml:Enumeration" href="TapiCommon.uml#_i92HIL6PEeWRz-VHgA3LJQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ak338IoOEeivCevppATXng" name="supportedCepLayerProtocolQualifier">
+          <type xmi:type="uml:Enumeration" href="TapiCommon.uml#_-eq88Ik2Eeil5oKL3Vgl-g"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cbvS8IoOEeivCevppATXng" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cbxIIIoOEeivCevppATXng" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_G1pfM9nfEeWIOYiRCk5bbQ" name="_aggregatedNodeEdgePoint" type="_i1UzkD-3EeWNAdBR30aJhw" isReadOnly="true" aggregation="shared" association="_G1pfMNnfEeWIOYiRCk5bbQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UMztkNnfEeWIOYiRCk5bbQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UMztkdnfEeWIOYiRCk5bbQ" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_MM6iEEHBEeWqPKyD1j6LMg" name="_mappedServiceInterfacePoint" association="_MM4s4EHBEeWqPKyD1j6LMg">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_MM6iEEHBEeWqPKyD1j6LMg" name="_mappedServiceInterfacePoint" isReadOnly="true" association="_MM4s4EHBEeWqPKyD1j6LMg">
           <ownedComment xmi:type="uml:Comment" xmi:id="_pWHaEEq8EeexQa2RWFy3AQ" annotatedElement="_MM6iEEHBEeWqPKyD1j6LMg">
             <body>NodeEdgePoint mapped to more than ServiceInterfacePoint (slicing/virtualizing) or a ServiceInterfacePoint mapped to more than one NodeEdgePoint (load balancing/Resilience) should be considered experimental</body>
           </ownedComment>
@@ -541,6 +544,12 @@ The structure of LTP supports all transport protocols including circuit and pack
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_STzYA-_tEeWLlrwIF3w0vA" name="_state" isReadOnly="true" aggregation="composite" association="_STzYAO_tEeWLlrwIF3w0vA">
           <type xmi:type="uml:Class" href="TapiCommon.uml#_j2GU0N78EeW-BtRsuJPbqg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UbQckqg5EeeAVfY3jqnvAA" name="_termination" isReadOnly="true" aggregation="composite" association="_UbP1gKg5EeeAVfY3jqnvAA">
+          <type xmi:type="uml:Class" href="TapiCommon.uml#_7n4UcKg2EeeAVfY3jqnvAA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_o-BkYRNVEeiKtYjI8wVF7A" name="_capacity" isReadOnly="true" aggregation="composite" association="_o-AWQBNVEeiKtYjI8wVF7A">
+          <type xmi:type="uml:Class" href="TapiCommon.uml#_KjZXM9yKEeWXdJnxZxtFYA"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_7vdVA2h_EeWZEqTYAF8eqA" name="linkPortDirection" visibility="public" isReadOnly="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_7vdVBGh_EeWZEqTYAF8eqA" annotatedElement="_7vdVA2h_EeWZEqTYAF8eqA">
@@ -953,28 +962,28 @@ Depending upon the importance of the traffic being routed different risk charact
       </ownedRule>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_asgp8BMlEee0L_IMWjydgQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AvAR9VqpEeexvMtO2oNM9g" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvAR9lqpEeexvMtO2oNM9g" key="Version" value="0.2.11"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvAR91qpEeexvMtO2oNM9g" key="Comment" value="«LifecycleAggregate» stereotype added"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvAR-FqpEeexvMtO2oNM9g" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvAR-VqpEeexvMtO2oNM9g" key="Date" value="2017-06-21"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvAR-lqpEeexvMtO2oNM9g" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_myBNsGm2EeiLh_06MH5Rjg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myBNsWm2EeiLh_06MH5Rjg" key="Version" value="0.2.14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myBNsmm2EeiLh_06MH5Rjg" key="Comment" value="New stereotype OpenModelStatement added. It contains the generic information of the model and extends the Metaclass &quot;Model&quot;."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myBNs2m2EeiLh_06MH5Rjg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myBNtGm2EeiLh_06MH5Rjg" key="Date" value="2018-04-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myBNtWm2EeiLh_06MH5Rjg" key="Author" value="IISOMI"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_asgp8RMlEee0L_IMWjydgQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_EwISEFaYEeeYOvPfNXXwvA"/>
+        <references xmi:type="ecore:EPackage" href="UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_S32LgD8HEeiIisB6uOvKFA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_PAqS8BhsEeewCs0lkpWskw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AvZTgFqpEeexvMtO2oNM9g" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvZTgVqpEeexvMtO2oNM9g" key="Version" value="0.0.7"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvZTglqpEeexvMtO2oNM9g" key="Comment" value="name property of the «RootElement» stereotype made mandatory.&#xD;&#xA;&#xD;&#xA;Editorial change:&#xD;&#xA;Imported the required metaclasses via “Element Import”."/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvZTg1qpEeexvMtO2oNM9g" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvZThFqpEeexvMtO2oNM9g" key="Date" value="2017-04-21"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvZThVqpEeexvMtO2oNM9g" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_myNa_mm2EeiLh_06MH5Rjg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myNa_2m2EeiLh_06MH5Rjg" key="Version" value="0.0.9"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myNbAGm2EeiLh_06MH5Rjg" key="Comment" value="BITS encoding and bitsDefinition property added."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myNbAWm2EeiLh_06MH5Rjg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myNbAmm2EeiLh_06MH5Rjg" key="Date" value="2018-04-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_myNbA2m2EeiLh_06MH5Rjg" key="Author" value="IISOMI"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PCwksBhsEeewCs0lkpWskw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_5WB28CZrEee8VYv13r5Sxg"/>
+        <references xmi:type="ecore:EPackage" href="UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_3NPRMD78EeiIisB6uOvKFA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_UbM6ILbyEeaufdfMFhfy_A"/>
     </profileApplication>
@@ -996,8 +1005,6 @@ Depending upon the importance of the traffic being routed different risk charact
   <OpenModel_Profile:OpenModelParameter xmi:id="_QDy9YfM7EeSb-q8_djA2ng" base_Parameter="_QDy9YPM7EeSb-q8_djA2ng"/>
   <OpenModel_Profile:OpenModelParameter xmi:id="_bH8AQfM7EeSb-q8_djA2ng" base_Parameter="_bH8AQPM7EeSb-q8_djA2ng"/>
   <OpenModel_Profile:OpenModelParameter xmi:id="_EGaoEv5BEeSIs5T3yQwyyw" base_Parameter="_0HRXMPMxEeSb-q8_djA2ng"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_8VW-oT-_EeWNAdBR30aJhw" base_StructuralFeature="_8VW-oD-_EeWNAdBR30aJhw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_8VYz0D-_EeWNAdBR30aJhw" base_StructuralFeature="_8VYMwD-_EeWNAdBR30aJhw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GkeWoD_DEeWNAdBR30aJhw" base_StructuralFeature="_Gkdvkj_DEeWNAdBR30aJhw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GkgL0D_DEeWNAdBR30aJhw" base_StructuralFeature="_GkfkwD_DEeWNAdBR30aJhw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9-Bkkz_KEeWNAdBR30aJhw" base_StructuralFeature="_9-Bkkj_KEeWNAdBR30aJhw"/>
@@ -1016,8 +1023,6 @@ Depending upon the importance of the traffic being routed different risk charact
   <OpenModel_Profile:OpenModelParameter xmi:id="_qRQggbsEEeWYrqoqXLgguw" base_Parameter="_qRQggLsEEeWYrqoqXLgguw"/>
   <OpenModel_Profile:OpenModelParameter xmi:id="_yctfAbsEEeWYrqoqXLgguw" base_Parameter="_yctfALsEEeWYrqoqXLgguw"/>
   <OpenModel_Profile:OpenModelParameter xmi:id="_2nCKYbsEEeWYrqoqXLgguw" base_Parameter="_2nCKYLsEEeWYrqoqXLgguw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_0rYyY9nXEeWIOYiRCk5bbQ" base_StructuralFeature="_0rYyYtnXEeWIOYiRCk5bbQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_0rYyZdnXEeWIOYiRCk5bbQ" base_StructuralFeature="_0rYyZNnXEeWIOYiRCk5bbQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_G1pfNNnfEeWIOYiRCk5bbQ" base_StructuralFeature="_G1pfM9nfEeWIOYiRCk5bbQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_G1pfNtnfEeWIOYiRCk5bbQ" base_StructuralFeature="_G1pfNdnfEeWIOYiRCk5bbQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8bWuYNv-EeWowYqZXEhn3A" base_StructuralFeature="_8ZRqw9v-EeWowYqZXEhn3A" partOfObjectKey="1"/>
@@ -1092,7 +1097,6 @@ Depending upon the importance of the traffic being routed different risk charact
   <OpenModel_Profile:OpenModelOperation xmi:id="_M2tARPVKEeWQB8HQFBfkJQ" base_Operation="_M2tAQPVKEeWQB8HQFBfkJQ"/>
   <OpenModel_Profile:OpenModelOperation xmi:id="_EGReIP5BEeSIs5T3yQwyyw" base_Operation="_taDjMPMvEeSb-q8_djA2ng"/>
   <OpenModel_Profile:OpenModelOperation xmi:id="_taDjMfMvEeSb-q8_djA2ng" base_Operation="_taDjMPMvEeSb-q8_djA2ng"/>
-  <OpenModel_Profile:StrictComposite xmi:id="_IAP54C59Eea0_JngOlSKcA" base_Association="_0rPocNnXEeWIOYiRCk5bbQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_xImb4-K4EeSq5fATALSQkQ" base_Class="_xImb0OK4EeSq5fATALSQkQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_xImb6eK4EeSq5fATALSQkQ" base_Class="_xImb0OK4EeSq5fATALSQkQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_xImb6uK4EeSq5fATALSQkQ" base_Class="_xImb0OK4EeSq5fATALSQkQ"/>
@@ -1135,14 +1139,12 @@ Depending upon the importance of the traffic being routed different risk charact
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rUBhsEeewCs0lkpWskw" base_Property="_kZ4bhd71EeW-BtRsuJPbqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rURhsEeewCs0lkpWskw" base_Property="_CM28Fd72EeW-BtRsuJPbqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rUhhsEeewCs0lkpWskw" base_Property="__EdnwN71EeW-BtRsuJPbqg"/>
-  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rUxhsEeewCs0lkpWskw" base_Property="_0rYyZNnXEeWIOYiRCk5bbQ"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rVBhsEeewCs0lkpWskw" base_Property="_tOFAld7rEeW-BtRsuJPbqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rVRhsEeewCs0lkpWskw" base_Property="_7DmpIN7vEeW-BtRsuJPbqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rVhhsEeewCs0lkpWskw" base_Property="_lqLYBd7wEeW-BtRsuJPbqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rVxhsEeewCs0lkpWskw" base_Property="_W9zh1d7-EeW-BtRsuJPbqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rWBhsEeewCs0lkpWskw" base_Property="_kTBiZd7xEeW-BtRsuJPbqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rWRhsEeewCs0lkpWskw" base_Property="_Iz6UoKf4EeW6jfwWQNiYcg"/>
-  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rWhhsEeewCs0lkpWskw" base_Property="_8VYMwD-_EeWNAdBR30aJhw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rWxhsEeewCs0lkpWskw" base_Property="_tQQ4VWj_EeWZEqTYAF8eqA"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rXBhsEeewCs0lkpWskw" base_Property="_T3W9cD_NEeWNAdBR30aJhw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC2rXRhsEeewCs0lkpWskw" base_Property="_T7hWoD_LEeWNAdBR30aJhw"/>
@@ -1154,7 +1156,6 @@ Depending upon the importance of the traffic being routed different risk charact
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC8x8hhsEeewCs0lkpWskw" base_Property="_SofFEMhmEeaVlemTikmRHw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC8x8xhsEeewCs0lkpWskw" base_Property="_3Tks8shmEeaVlemTikmRHw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC8x9BhsEeewCs0lkpWskw" base_Property="_tQQ4U2j_EeWZEqTYAF8eqA"/>
-  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC8x9RhsEeewCs0lkpWskw" base_Property="_8VW-oD-_EeWNAdBR30aJhw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC8x9hhsEeewCs0lkpWskw" base_Property="_IZggA98AEeW-BtRsuJPbqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC8x9xhsEeewCs0lkpWskw" base_Property="_WSiGU971EeW-BtRsuJPbqg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PC8x-BhsEeewCs0lkpWskw" base_Property="_cQkyE971EeW-BtRsuJPbqg"/>
@@ -1178,7 +1179,6 @@ Depending upon the importance of the traffic being routed different risk charact
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PDI_MBhsEeewCs0lkpWskw" base_Property="_Gkdvkj_DEeWNAdBR30aJhw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PDI_MRhsEeewCs0lkpWskw" base_Property="_ejyEhOKyEeSq5fATALSQkQ"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PDI_MhhsEeewCs0lkpWskw" base_Property="_KjZW_9yKEeWXdJnxZxtFYA"/>
-  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PDI_MxhsEeewCs0lkpWskw" base_Property="_0rYyYtnXEeWIOYiRCk5bbQ"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PDI_NBhsEeewCs0lkpWskw" base_Property="_G1pfM9nfEeWIOYiRCk5bbQ"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PDI_NRhsEeewCs0lkpWskw" base_Property="_MM6iEEHBEeWqPKyD1j6LMg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_PDI_NhhsEeewCs0lkpWskw" base_Property="_STzYA-_tEeWLlrwIF3w0vA"/>
@@ -1319,4 +1319,19 @@ Depending upon the importance of the traffic being routed different risk charact
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_D8PqgIfOEeeirpBaj87qAw" base_Property="_D8PDcIfOEeeirpBaj87qAw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_6TXH4YfREeeirpBaj87qAw" base_StructuralFeature="_6TXH4IfREeeirpBaj87qAw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_6TXu8IfREeeirpBaj87qAw" base_Property="_6TXH4IfREeeirpBaj87qAw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_qpAjEag3EeeAVfY3jqnvAA" base_StructuralFeature="_qpAjEKg3EeeAVfY3jqnvAA"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_qpBxMKg3EeeAVfY3jqnvAA" base_Property="_qpAjEKg3EeeAVfY3jqnvAA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UbQck6g5EeeAVfY3jqnvAA" base_StructuralFeature="_UbQckqg5EeeAVfY3jqnvAA"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_UbRDoKg5EeeAVfY3jqnvAA" base_Property="_UbQckqg5EeeAVfY3jqnvAA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UbRqsag5EeeAVfY3jqnvAA" base_StructuralFeature="_UbRqsKg5EeeAVfY3jqnvAA"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_UbRqsqg5EeeAVfY3jqnvAA" base_Property="_UbRqsKg5EeeAVfY3jqnvAA"/>
+  <OpenModel_Profile:ExtendedComposite xmi:id="_iWm9IKg5EeeAVfY3jqnvAA" base_Association="_UbP1gKg5EeeAVfY3jqnvAA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_o-BkYhNVEeiKtYjI8wVF7A" base_StructuralFeature="_o-BkYRNVEeiKtYjI8wVF7A"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_o-CLcBNVEeiKtYjI8wVF7A" base_Property="_o-BkYRNVEeiKtYjI8wVF7A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_o-DZkBNVEeiKtYjI8wVF7A" base_StructuralFeature="_o-CygBNVEeiKtYjI8wVF7A"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_o-DZkRNVEeiKtYjI8wVF7A" base_Property="_o-CygBNVEeiKtYjI8wVF7A"/>
+  <OpenModel_Profile:ExtendedComposite xmi:id="_2G1NsBNVEeiKtYjI8wVF7A" base_Association="_o-AWQBNVEeiKtYjI8wVF7A"/>
+  <OpenModel_Profile:OpenModelStatement xmi:id="_mx7HG2m2EeiLh_06MH5Rjg" base_Model="_nbYiwDA4Eea4fKwSGMr6CA"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_ak4fAIoOEeivCevppATXng" base_Property="_ak338IoOEeivCevppATXng"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ak4fAYoOEeivCevppATXng" base_StructuralFeature="_ak338IoOEeivCevppATXng"/>
 </xmi:XMI>

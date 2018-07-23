@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenInterfaceModel_Profile="http:///schemas/OpenInterfaceModel_Profile/_5WBP4CZrEee8VYv13r5Sxg/6" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_EwCygFaYEeeYOvPfNXXwvA/23" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenInterfaceModel_Profile/_5WBP4CZrEee8VYv13r5Sxg/6 UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_5WB28CZrEee8VYv13r5Sxg http:///schemas/OpenModel_Profile/_EwCygFaYEeeYOvPfNXXwvA/23 UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_EwISEFaYEeeYOvPfNXXwvA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenInterfaceModel_Profile="http:///schemas/OpenInterfaceModel_Profile/_3NKYsD78EeiIisB6uOvKFA/8" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_S30WUD8HEeiIisB6uOvKFA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenInterfaceModel_Profile/_3NKYsD78EeiIisB6uOvKFA/8 UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_3NPRMD78EeiIisB6uOvKFA http:///schemas/OpenModel_Profile/_S30WUD8HEeiIisB6uOvKFA/26 UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_S32LgD8HEeiIisB6uOvKFA">
   <uml:Model xmi:id="_R72poDA5Eea4fKwSGMr6CA" name="TapiNotification">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_r_VegBJ_Eeix4OZk6OGmSg" annotatedElement="_R72poDA5Eea4fKwSGMr6CA">
+      <body>&#xD;
+This module contains TAPI Notification Model definitions.&#xD;
+Source: TapiNotification.uml&#xD;
+Copyright (c) 2018 Open Networking Foundation (ONF). All rights reserved.&#xD;
+License: This module is distributed under the Apache License 2.0</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Package" xmi:id="_yeC9sC5xEea0_JngOlSKcA" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_rZ7rwCzyEeaYO8M_h7XJ5A" name="NotifSubscriptionHasFilter" memberEnd="_rZ7rxCzyEeaYO8M_h7XJ5A _raE1sCzyEeaYO8M_h7XJ5A">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rZ7rwizyEeaYO8M_h7XJ5A" source="org.eclipse.papyrus">
@@ -63,7 +70,14 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_Hh5YFiB_EeeWCKlkirNtnw" name="notification" type="_7CEIsC1qEeair-8ZDvf8jw" association="_Hh5YECB_EeeWCKlkirNtnw"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_xbgioC5xEea0_JngOlSKcA" name="Diagrams"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_xbgioC5xEea0_JngOlSKcA" name="Diagrams">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_c5n-kBEJEeix4OZk6OGmSg" annotatedElement="_xbgioC5xEea0_JngOlSKcA">
+        <body>&#xD;
+TAPI Notification Model Definitions.&#xD;
+Source: TapiNotification.uml&#xD;
+Copyright: 2018 Open Networking Foundation (ONF).</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_wQFRUC5xEea0_JngOlSKcA" name="Imports">
       <packageImport xmi:type="uml:PackageImport" xmi:id="_DygpADA8Eea4fKwSGMr6CA">
         <importedPackage xmi:type="uml:Model" href="TapiCommon.uml#_cOw5UDA4Eea4fKwSGMr6CA"/>
@@ -312,7 +326,7 @@ This specifics of this is typically dependent on the implementation protocol &am
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_hZotgCzcEeaYO8M_h7XJ5A" name="NotificationType" isLeaf="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_hZotgSzcEeaYO8M_h7XJ5A" annotatedElement="_hZotgCzcEeaYO8M_h7XJ5A">
-          <body>The orientation of flow at the Port of a Forwarding entity</body>
+          <body>List of supported Notifications types.</body>
         </ownedComment>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hZotiCzcEeaYO8M_h7XJ5A" name="OBJECT_CREATION">
           <ownedComment xmi:type="uml:Comment" xmi:id="_hZotiSzcEeaYO8M_h7XJ5A" annotatedElement="_hZotiCzcEeaYO8M_h7XJ5A">
@@ -326,7 +340,7 @@ This specifics of this is typically dependent on the implementation protocol &am
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_FFtS8CzeEeaYO8M_h7XJ5A" name="ObjectType" isLeaf="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_FFtS8SzeEeaYO8M_h7XJ5A" annotatedElement="_FFtS8CzeEeaYO8M_h7XJ5A">
-          <body>The orientation of flow at the Port of a Forwarding entity</body>
+          <body>The list of TAPI Global Object Class types on which Notifications can be raised.</body>
         </ownedComment>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Jsw9oCzeEeaYO8M_h7XJ5A" name="TOPOLOGY"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_KpUFcCzeEeaYO8M_h7XJ5A" name="NODE"/>
@@ -339,6 +353,16 @@ This specifics of this is typically dependent on the implementation protocol &am
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UVnLoCzeEeaYO8M_h7XJ5A" name="NODE_EDGE_POINT"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Vq3uYCzeEeaYO8M_h7XJ5A" name="SERVICE_INTERFACE_POINT"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XRFeQCzeEeaYO8M_h7XJ5A" name="CONNECTION_END_POINT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__WB2QBNXEeiKtYjI8wVF7A" name="MAINTENANCE_ENTITY_GROUP"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CILNwBNYEeiKtYjI8wVF7A" name="MAINTENANCE_ENTITY"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EpIHkBNYEeiKtYjI8wVF7A" name="MEG_END_POINT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GI_-4BNYEeiKtYjI8wVF7A" name="MEG_INTERMEDIATE_POINT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vV3I0BNYEeiKtYjI8wVF7A" name="SWITCH_CONTROL"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wPccMBNYEeiKtYjI8wVF7A" name="SWITCH"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_xSSZQBNYEeiKtYjI8wVF7A" name="ROUTE"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MKoKIBNYEeiKtYjI8wVF7A" name="NODE_RULE_GROUP"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Na--wBNYEeiKtYjI8wVF7A" name="INTER_RULE_GROUP"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_tPnOABNYEeiKtYjI8wVF7A" name="RULE"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_bgwjsCzeEeaYO8M_h7XJ5A" name="SourceIndicator" isLeaf="true">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ggplICzeEeaYO8M_h7XJ5A" name="RESOURCE_OPERATION"/>
@@ -368,28 +392,28 @@ This specifics of this is typically dependent on the implementation protocol &am
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_KJvhkBMtEee0L_IMWjydgQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DOPxAFqoEeexvMtO2oNM9g" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOPxAVqoEeexvMtO2oNM9g" key="Version" value="0.2.11"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOPxAlqoEeexvMtO2oNM9g" key="Comment" value="«LifecycleAggregate» stereotype added"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOPxA1qoEeexvMtO2oNM9g" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOPxBFqoEeexvMtO2oNM9g" key="Date" value="2017-06-21"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOPxBVqoEeexvMtO2oNM9g" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6pT9sWm1EeiLh_06MH5Rjg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pT9smm1EeiLh_06MH5Rjg" key="Version" value="0.2.14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pT9s2m1EeiLh_06MH5Rjg" key="Comment" value="New stereotype OpenModelStatement added. It contains the generic information of the model and extends the Metaclass &quot;Model&quot;."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pT9tGm1EeiLh_06MH5Rjg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pT9tWm1EeiLh_06MH5Rjg" key="Date" value="2018-04-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pT9tmm1EeiLh_06MH5Rjg" key="Author" value="IISOMI"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJvhkRMtEee0L_IMWjydgQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_EwISEFaYEeeYOvPfNXXwvA"/>
+        <references xmi:type="ecore:EPackage" href="UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_S32LgD8HEeiIisB6uOvKFA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="UmlProfiles/OpenModelProfile/OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_E-jU0BhsEeewCs0lkpWskw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DOclUFqoEeexvMtO2oNM9g" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOclUVqoEeexvMtO2oNM9g" key="Version" value="0.0.7"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOclUlqoEeexvMtO2oNM9g" key="Comment" value="name property of the «RootElement» stereotype made mandatory.&#xD;&#xA;&#xD;&#xA;Editorial change:&#xD;&#xA;Imported the required metaclasses via “Element Import”."/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOclU1qoEeexvMtO2oNM9g" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOclVFqoEeexvMtO2oNM9g" key="Date" value="2017-04-21"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOclVVqoEeexvMtO2oNM9g" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6pgK8Gm1EeiLh_06MH5Rjg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pgK8Wm1EeiLh_06MH5Rjg" key="Version" value="0.0.9"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pgK8mm1EeiLh_06MH5Rjg" key="Comment" value="BITS encoding and bitsDefinition property added."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pgK82m1EeiLh_06MH5Rjg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pgK9Gm1EeiLh_06MH5Rjg" key="Date" value="2018-04-13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6pgK9Wm1EeiLh_06MH5Rjg" key="Author" value="IISOMI"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FAkuEBhsEeewCs0lkpWskw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_5WB28CZrEee8VYv13r5Sxg"/>
+        <references xmi:type="ecore:EPackage" href="UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_3NPRMD78EeiIisB6uOvKFA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="UmlProfiles/OpenInterfaceModelProfile/OpenInterfaceModel_Profile.profile.uml#_UbM6ILbyEeaufdfMFhfy_A"/>
     </profileApplication>
@@ -530,8 +554,6 @@ This specifics of this is typically dependent on the implementation protocol &am
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Hh5YFSB_EeeWCKlkirNtnw" base_StructuralFeature="_Hh5YEyB_EeeWCKlkirNtnw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_Hh5YFyB_EeeWCKlkirNtnw" base_Property="_Hh5YFiB_EeeWCKlkirNtnw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Hh5YGCB_EeeWCKlkirNtnw" base_StructuralFeature="_Hh5YFiB_EeeWCKlkirNtnw"/>
-  <OpenModel_Profile:ExtendedComposite xmi:id="_t8gc0CB_EeeWCKlkirNtnw" base_Association="_Hh5YECB_EeeWCKlkirNtnw"/>
-  <OpenModel_Profile:ExtendedComposite xmi:id="_vrpfMCB_EeeWCKlkirNtnw" base_Association="_HA6K4CB_EeeWCKlkirNtnw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_K1S7ISCCEeeWCKlkirNtnw" base_Class="_K1S7ICCCEeeWCKlkirNtnw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_MQpe0CCCEeeWCKlkirNtnw" base_Class="_MQft0CCCEeeWCKlkirNtnw"/>
   <OpenModel_Profile:StrictComposite xmi:id="_wieSICCCEeeWCKlkirNtnw" base_Association="_Nsg9cE8cEea3rq3M7G3w3w"/>
@@ -541,4 +563,9 @@ This specifics of this is typically dependent on the implementation protocol &am
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_DOPJ8lqoEeexvMtO2oNM9g" base_Class="_mWGkkMh5EeaVlemTikmRHw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_DOPJ81qoEeexvMtO2oNM9g" base_Class="_K1S7ICCCEeeWCKlkirNtnw"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelClass xmi:id="_DOPJ9FqoEeexvMtO2oNM9g" base_Class="_MQft0CCCEeeWCKlkirNtnw"/>
+  <OpenModel_Profile:StrictComposite xmi:id="_maJjQMrkEeeFHsPqdArtwA" base_Association="_weSVgMh5EeaVlemTikmRHw"/>
+  <OpenModel_Profile:StrictComposite xmi:id="_sa_rYMrkEeeFHsPqdArtwA" base_Association="_AGv4IMh6EeaVlemTikmRHw"/>
+  <OpenModel_Profile:StrictComposite xmi:id="_MKMBAMrlEeeFHsPqdArtwA" base_Association="_HA6K4CB_EeeWCKlkirNtnw"/>
+  <OpenModel_Profile:StrictComposite xmi:id="_NoX2QMrlEeeFHsPqdArtwA" base_Association="_Hh5YECB_EeeWCKlkirNtnw"/>
+  <OpenModel_Profile:OpenModelStatement xmi:id="_6pT9sGm1EeiLh_06MH5Rjg" base_Model="_R72poDA5Eea4fKwSGMr6CA"/>
 </xmi:XMI>
