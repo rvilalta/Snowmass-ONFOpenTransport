@@ -14,6 +14,7 @@ from tapi_server.models.connection_end_point import ConnectionEndPoint  # noqa: 
 from tapi_server.models.name_and_value import NameAndValue  # noqa: F401,E501
 from tapi_server.models.resource_spec import ResourceSpec  # noqa: F401,E501
 from tapi_server.models.termination_pac import TerminationPac  # noqa: F401,E501
+from tapi_server.models.sdm_pool import SdmPool
 from tapi_server import util
 
 
@@ -23,7 +24,7 @@ class NodeEdgePoint(Model):
     Do not edit the class manually.
     """
 
-    def __init__(self, uuid: str=None, name: List[NameAndValue]=None, administrative_state: str=None, operational_state: str=None, lifecycle_state: str=None, termination_direction: str=None, termination_state: str=None, total_potential_capacity: Capacity=None, available_capacity: Capacity=None, connection_end_point: List[ConnectionEndPoint]=None, layer_protocol_name: str=None, aggregated_node_edge_point: List[str]=None, mapped_service_interface_point: List[str]=None, link_port_direction: str=None, link_port_role: str=None):  # noqa: E501
+    def __init__(self, uuid: str=None, name: List[NameAndValue]=None, administrative_state: str=None, operational_state: str=None, lifecycle_state: str=None, termination_direction: str=None, termination_state: str=None, total_potential_capacity: Capacity=None, available_capacity: Capacity=None, connection_end_point: List[ConnectionEndPoint]=None, layer_protocol_name: str=None, aggregated_node_edge_point: List[str]=None, mapped_service_interface_point: List[str]=None, link_port_direction: str=None, link_port_role: str=None, sdm_pool: SdmPool=None):  # noqa: E501
         """NodeEdgePoint - a model defined in Swagger
 
         :param uuid: The uuid of this NodeEdgePoint.  # noqa: E501
@@ -56,6 +57,8 @@ class NodeEdgePoint(Model):
         :type link_port_direction: str
         :param link_port_role: The link_port_role of this NodeEdgePoint.  # noqa: E501
         :type link_port_role: str
+        :param sdm_pool: SDM extensions
+        :type sdm_pool: SdmPool
         """
         self.swagger_types = {
             'uuid': str,
@@ -72,7 +75,8 @@ class NodeEdgePoint(Model):
             'aggregated_node_edge_point': List[str],
             'mapped_service_interface_point': List[str],
             'link_port_direction': str,
-            'link_port_role': str
+            'link_port_role': str,
+            'sdm_pool': SdmPool
         }
 
         self.attribute_map = {
@@ -90,7 +94,8 @@ class NodeEdgePoint(Model):
             'aggregated_node_edge_point': 'aggregated-node-edge-point',
             'mapped_service_interface_point': 'mapped-service-interface-point',
             'link_port_direction': 'link-port-direction',
-            'link_port_role': 'link-port-role'
+            'link_port_role': 'link-port-role',
+            'sdm_pool': 'sdm-pool'
         }
 
         self._uuid = uuid
@@ -108,6 +113,7 @@ class NodeEdgePoint(Model):
         self._mapped_service_interface_point = mapped_service_interface_point
         self._link_port_direction = link_port_direction
         self._link_port_role = link_port_role
+        self._sdm_pool = sdm_pool
 
     @classmethod
     def from_dict(cls, dikt) -> 'NodeEdgePoint':
@@ -390,7 +396,7 @@ class NodeEdgePoint(Model):
         :param layer_protocol_name: The layer_protocol_name of this NodeEdgePoint.
         :type layer_protocol_name: str
         """
-        allowed_values = ["OTSiA", "OCH", "OTU", "ODU", "ETH", "ETY", "DSR"]  # noqa: E501
+        allowed_values = ["OTSiA", "OCH", "OTU", "ODU", "ETH", "ETY", "DSR", "SDM"]  # noqa: E501
         if layer_protocol_name not in allowed_values:
             raise ValueError(
                 "Invalid value for `layer_protocol_name` ({0}), must be one of {1}"
@@ -498,3 +504,22 @@ class NodeEdgePoint(Model):
             )
 
         self._link_port_role = link_port_role
+
+    @property
+    def sdm_pool(self) -> SdmPool:
+        """Gets the sdm_pool of this NodeEdgePoint.
+
+        :return: The sdm_pool of this NodeEdgePoint.
+        :rtype: str
+        """
+        return self._sdm_pool
+
+    @sdm_pool.setter
+    def sdm_pool(self, sdm_pool: SdmPool):
+        """Sets the sdm_pool of this NodeEdgePoint.
+
+        :param sdm_pool: The sdm_pool of this NodeEdgePoint.
+        :type sdm_pool: str
+        """
+
+        self._sdm_pool = sdm_pool

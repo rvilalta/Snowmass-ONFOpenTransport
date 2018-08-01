@@ -18,6 +18,7 @@ from tapi_server.models.resilience_type import ResilienceType  # noqa: F401,E501
 from tapi_server.models.service_spec import ServiceSpec  # noqa: F401,E501
 from tapi_server.models.time_range import TimeRange  # noqa: F401,E501
 from tapi_server.models.topology_constraint import TopologyConstraint  # noqa: F401,E501
+from tapi_server.models.include_core import IncludeCore
 from tapi_server import util
 
 
@@ -27,7 +28,7 @@ class ConnectivityService(Model):
     Do not edit the class manually.
     """
 
-    def __init__(self, uuid: str=None, name: List[NameAndValue]=None, route_objective_function: str=None, diversity_policy: str=None, service_type: str=None, service_level: str=None, is_exclusive: bool=None, requested_capacity: Capacity=None, schedule: TimeRange=None, cost_characteristic: List[CostCharacteristic]=None, latency_characteristic: List[LatencyCharacteristic]=None, coroute_inclusion: str=None, diversity_exclusion: List[str]=None, include_topology: List[str]=None, avoid_topology: List[str]=None, include_path: List[str]=None, exclude_path: List[str]=None, include_link: List[str]=None, exclude_link: List[str]=None, include_node: List[str]=None, exclude_node: List[str]=None, preferred_transport_layer: List[str]=None, administrative_state: str=None, operational_state: str=None, lifecycle_state: str=None, resilience_type: ResilienceType=None, restoration_coordinate_type: str=None, restore_priority: str=None, reversion_mode: str=None, wait_to_revert_time: str=None, hold_off_time: str=None, is_lock_out: bool=None, is_frozen: bool=None, is_coordinated_switching_both_ends: bool=None, max_switch_times: str=None, layer_protocol: str=None, end_point: List[ConnectivityServiceEndPoint]=None, connection: List[str]=None, direction: str=None, layer_protocol_name: str=None):  # noqa: E501
+    def __init__(self, uuid: str=None, name: List[NameAndValue]=None, route_objective_function: str=None, diversity_policy: str=None, service_type: str=None, service_level: str=None, is_exclusive: bool=None, requested_capacity: Capacity=None, schedule: TimeRange=None, cost_characteristic: List[CostCharacteristic]=None, latency_characteristic: List[LatencyCharacteristic]=None, coroute_inclusion: str=None, diversity_exclusion: List[str]=None, include_topology: List[str]=None, avoid_topology: List[str]=None, include_path: List[str]=None, exclude_path: List[str]=None, include_link: List[str]=None, exclude_link: List[str]=None, include_node: List[str]=None, exclude_node: List[str]=None, preferred_transport_layer: List[str]=None, administrative_state: str=None, operational_state: str=None, lifecycle_state: str=None, resilience_type: ResilienceType=None, restoration_coordinate_type: str=None, restore_priority: str=None, reversion_mode: str=None, wait_to_revert_time: str=None, hold_off_time: str=None, is_lock_out: bool=None, is_frozen: bool=None, is_coordinated_switching_both_ends: bool=None, max_switch_times: str=None, layer_protocol: str=None, end_point: List[ConnectivityServiceEndPoint]=None, connection: List[str]=None, direction: str=None, layer_protocol_name: str=None, include_core: IncludeCore=None):  # noqa: E501
         """ConnectivityService - a model defined in Swagger
 
         :param uuid: The uuid of this ConnectivityService.  # noqa: E501
@@ -151,7 +152,8 @@ class ConnectivityService(Model):
             'end_point': List[ConnectivityServiceEndPoint],
             'connection': List[str],
             'direction': str,
-            'layer_protocol_name': str
+            'layer_protocol_name': str,
+            'include_core': IncludeCore
         }
 
         self.attribute_map = {
@@ -194,7 +196,8 @@ class ConnectivityService(Model):
             'end_point': 'end-point',
             'connection': 'connection',
             'direction': 'direction',
-            'layer_protocol_name': 'layer-protocol-name'
+            'layer_protocol_name': 'layer-protocol-name',
+            'include_core': 'include-core'
         }
 
         self._uuid = uuid
@@ -237,6 +240,7 @@ class ConnectivityService(Model):
         self._connection = connection
         self._direction = direction
         self._layer_protocol_name = layer_protocol_name
+        self._include_core = include_core
 
     @classmethod
     def from_dict(cls, dikt) -> 'ConnectivityService':
@@ -1191,3 +1195,27 @@ class ConnectivityService(Model):
             )
 
         self._layer_protocol_name = layer_protocol_name
+
+
+    @property
+    def include_core(self) -> IncludeCore:
+        """Gets the layer_protocol_name of this ConnectivityService.
+
+
+        :return: The layer_protocol_name of this ConnectivityService.
+        :rtype: str
+        """
+        return self._include_core
+
+    @include_core.setter
+    def include_core(self, include_core: IncludeCore):
+        """Sets the layer_protocol_name of this ConnectivityService.
+
+
+        :param layer_protocol_name: The layer_protocol_name of this ConnectivityService.
+        :type layer_protocol_name: str
+        """
+ 
+
+        self._include_core = include_core
+        

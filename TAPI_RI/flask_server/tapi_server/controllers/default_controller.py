@@ -95,7 +95,7 @@ def create_context_connectivity_service_connectivity_service_by_id(uuid, connect
     """
     if connexion.request.is_json:
         connectivity_service = ConnectivityService.from_dict(connexion.request.get_json())  # noqa: E501
-    return 'do some magic!'
+    return connectivity_service
 
 
 def create_context_connectivity_service_cost_characteristic_cost_characteristic_by_id(uuid, cost_name, cost_characteristic):  # noqa: E501

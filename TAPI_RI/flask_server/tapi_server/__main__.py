@@ -17,7 +17,7 @@ def main():
         with current_app.open_resource("database/context.json", 'r') as f:
             data = json.load(f)
             database.context = TapiContext.from_dict(data)
-    app.run(port=8080)
+    app.run(port=8182)
 
 
 if __name__ == '__main__':
