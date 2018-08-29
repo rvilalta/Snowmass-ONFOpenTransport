@@ -1,29 +1,27 @@
 {
   "uuid" : "cs1",
   "service-type":"POINT_TO_POINT_CONNECTIVITY",
-  "requested-capacity": {"total-size": { "value": "1", "unit": "GBPS" }},
+  "requested-capacity": {"total-size": { "value": "100", "unit": "MBPS" }},
   "include-core" : {
         "core-id": 1,
         "selected-frequency-slot": [
             {
-                "slot-id": 155
+                "slot-id": 1
             }
         ]
   },
   "end-point":[
-    { "local-id": "csep-1",
-      "layer-protocol-name":"ETH",
+    { "layer-protocol-name":"ETH",
       "direction":"BIDIRECTIONAL",
       "role":"SYMMETRIC",
       "service-interface-point":
-          "/restconf/config/context/service-interface-point/sip-pe1-uni1"
+          "/restconf/config/context/service-interface-point/10.1.7.66_65536/"
     },
-    { "local-id":"csep-2",
-     "layer-protocol-name":"ETH",
+    { "layer-protocol-name":"ETH",
      "direction":"BIDIRECTIONAL",
      "role":"SYMMETRIC",
      "service-interface-point":
-         "/restconf/config/context/service-interface-point/sip-pe2-uni1"
+         "/restconf/config/context/service-interface-point/10.1.7.84_3/"
     }
   ]
 }
