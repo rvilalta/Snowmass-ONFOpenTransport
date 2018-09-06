@@ -21,7 +21,7 @@
      "direction":"BIDIRECTIONAL",
      "role":"SYMMETRIC",
      "service-interface-point":
-         "/restconf/config/context/service-interface-point/10.1.7.84_3/"
+         "/restconf/config/context/service-interface-point/10.1.7.84_1/"
     }
   ]
 }
